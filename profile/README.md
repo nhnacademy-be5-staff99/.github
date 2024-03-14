@@ -8,4 +8,4 @@ nhnacademy
 
 
 # Project Architecture
-![](store99_architecture.png)
+![](/profile/store99_architecture.png)
