@@ -20,6 +20,7 @@ nhnacademy
 | store99-batch | 133.186.212.35 | 192.168.0.130 | 8080 | store99-batch | Jenkins | store99 | ssh -i github_rsa mailto:store99@133.186.159.71133.186.212.35 |
 | store99-elk |  |  |  | store99-elk | Jenkins | store99 |  |
 
+# 컨벤션 & 팀 규칙
 - ### 공통
 
 - 필요한 검사나 검증은 프론트, 백, DB 모두 하기
