@@ -94,16 +94,17 @@ nhnacademy
 
 
 ### 네이밍
-
 - 클래스: PascalCase
 - 변수: camelCase
 - ENUM, 상수: UPPER_CASE
 - 정적 파일: snake_case
-- package kebab-case
+- package: kebab-case
+- DB: snake_case
+- branch명: kebab-case
 - 변수명에 자료형 Optional, List 명시
     - memoOptional, memoList
-- DB: snake_case
 
+  
 ### API
 
 - REST API 원칙 지키기
