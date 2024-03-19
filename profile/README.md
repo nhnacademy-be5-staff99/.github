@@ -21,7 +21,7 @@ nhnacademy
 | store99-elk |  |  |  | store99-elk | Jenkins | store99 |  |
 
 # 컨벤션 & 팀 규칙
-- ### 공통
+### 공통
 
 - 필요한 검사나 검증은 프론트, 백, DB 모두 하기
 - 사용하지 않는 메소드 지우기
