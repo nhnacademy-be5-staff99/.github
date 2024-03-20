@@ -106,86 +106,44 @@ nhnacademy
 
   
 ### API
-
 - REST API 원칙 지키기
 - 중첩은 3단계까지
 - API 명세 Gihub Projects 이용하여 공유
 - 후에 Spring Rest Doc 사용하여 명세
-
-[[네트워크] REST API / Restful API란?(feat. 원칙과 네이밍 규칙)](https://ziszini.tistory.com/91)
-
-[웹 API 디자인 모범 사례 - Azure Architecture Center](https://learn.microsoft.com/ko-kr/azure/architecture/best-practices/api-design)
-
-[Dooray!](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2937064454837487755)
-
-### Spring
-
-- osiv 끄기
-- ddl-auto 는 validate
-- package
-    
-    ```java
-    config
-    {{domain}}
-    ┕ controller
-    ┕ service
-    	┕ impl
-    ┕ repository
-    ┕ dto
-    	┕ request (class MemoRegisterRequest.java)
-    	┕ response (class MemoRegisterResponse.java)
-    ┕ entity
-    ┕ exception
-    ┕ advice
-    ```
-    
-- 프론트는 부트 스트랩 사용하여 반응형
-- properties의 DB 정보는 암호화
-
-### 테스트
-
-- 테스트는 h2 사용
-- 커버리지 80퍼 이상 맞추기
-
-### Controller
-- 도메인 넘기지 말고 dto 사용
-- Map 사용하여 값 받거나 반환하지 말기
-- 공통 응답 ResponseEntity 사용
-    ```json
-    // 단 건
-    {
-        "header": {
-            "isSuccessful":true,
-            "resultCode":200,
-            "resultMessage":"Success"
-        },
-        "result": {
-            ...
-        }
+```json
+// 단 건
+{
+    "header": {
+        "isSuccessful":true,
+        "resultCode":200,
+        "resultMessage":"Success"
+    },
+    "result": {
+        ...
     }
-    
-    // 리스트
-    {
-        "header": {
-            "isSuccessful":true,
-            "resultCode":200,
-            "resultMessage":"Success"
-        },
-        "result": [ ... ],
-        "totalCount": 0
-    }
-    
-    // 에러
-    {
-        "header": {
-            "isSuccessful":false,
-            "resultCode":401,
-            "resultMessage":"잘못된 비밀번호 입니다."
-        },
-        "result": null
-    }
-    ```
-    [Dooray!](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2937064454837487755)
+}
+
+// 리스트
+{
+    "header": {
+        "isSuccessful":true,
+        "resultCode":200,
+        "resultMessage":"Success"
+    },
+    "result": [ ... ],
+    "totalCount": 0
+}
+
+// 에러
+{
+    "header": {
+        "isSuccessful":false,
+        "resultCode":401,
+        "resultMessage":"잘못된 비밀번호 입니다."
+    },
+    "result": null
+}
+```
   
 **요청 메시지**
 - 모든 요청에 'Authorization' 헤더를 포함하여 요청합니다.
@@ -218,6 +176,40 @@ nhnacademy
     - `header.resultMessage` 는 사람을 위해 제공되는 필드입니다.
     - `header.resultMessage` 는 이해하기 쉬운 형태로 예고 없이 변경될 수 있습니다.
     - `header.resultMessage` 는 적절한 응답인지 확인을 위해 프로그램 로직에서 사용하는 것을 지양해야합니다.
+
+[[네트워크] REST API / Restful API란?(feat. 원칙과 네이밍 규칙)](https://ziszini.tistory.com/91)
+[웹 API 디자인 모범 사례 - Azure Architecture Center](https://learn.microsoft.com/ko-kr/azure/architecture/best-practices/api-design)
+[Dooray!](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2937064454837487755)
+
+### Spring
+- osiv 끄기
+- ddl-auto 는 validate
+- package
+    ```java
+    config
+    {{domain}}
+    ┕ controller
+    ┕ service
+    	┕ impl
+    ┕ repository
+    ┕ dto
+    	┕ request (class MemoRegisterRequest.java)
+    	┕ response (class MemoRegisterResponse.java)
+    ┕ entity
+    ┕ exception
+    ┕ advice
+    ```
+- 프론트는 부트 스트랩 사용하여 반응형
+- properties의 DB 정보는 암호화
+
+### 테스트
+- 테스트는 h2 사용
+- 커버리지 80퍼 이상 맞추기
+
+### Controller
+- 도메인 넘기지 말고 dto 사용
+- Map 사용하여 값 받거나 반환하지 말기
+- 공통 응답 ResponseEntity 사용
 
 ### Service
 - 서비스 레이어는 반드시 사용
