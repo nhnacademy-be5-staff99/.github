@@ -12,12 +12,12 @@ nhnacademy
 | 리포지토리 | Public IP (플로팅 IP) | Private IP (사설 IP) | PORT (포트) | 인스턴스 이름 | CI/CD 환경 | Login User 이름 | 서버 접속 명령어 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | store99-front | 180.210.83.229 | 192.168.0.65 | 8080 | store99-front | Github Action | store99 | ssh -i github_rsa store99@180.210.83.229 |
-| store99-gateway | 125.6.38.50 | 192.168.0.93 | 8080 | store99-gateway | Github Action | store99 | ssh -i github_rsa mailto:store99@125.6.38.50 |
-| store99-auth | 125.6.38.50 | 192.168.0.93 | 8081 | store99-gateway | Github Action | store99 | ssh -i github_rsa mailto:store99@125.6.38.50 |
-| store99-eureka | 125.6.38.50 | 192.168.0.93 | 8082 | store99-gateway | Github Action | store99 | ssh -i github_rsa mailto:store99@125.6.38.50 |
-| store99-bookstore | 133.186.159.71 | 192.168.0.96 | 8080 | store99-bookstore | Jenkins | store99 | ssh -i github_rsa mailto:store99@133.186.159.71 |
-| store99-coupon | 180.210.83.81 | 192.168.0.32 | 8080 | store99-coupon | Jenkins | store99 | ssh -i github_rsa mailto:store99@133.186.159.71180.210.83.81 |
-| store99-batch | 133.186.212.35 | 192.168.0.130 | 8080 | store99-batch | Jenkins | store99 | ssh -i github_rsa mailto:store99@133.186.159.71133.186.212.35 |
+| store99-gateway | 125.6.38.50 | 192.168.0.93 | 8080 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
+| store99-auth | 125.6.38.50 | 192.168.0.93 | 8081 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
+| store99-eureka | 125.6.38.50 | 192.168.0.93 | 8082 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
+| store99-bookstore | 133.186.159.71 | 192.168.0.96 | 8080 | store99-bookstore | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71 |
+| store99-coupon | 180.210.83.81 | 192.168.0.32 | 8080 | store99-coupon | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71180.210.83.81 |
+| store99-batch | 133.186.212.35 | 192.168.0.130 | 8080 | store99-batch | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71133.186.212.35 |
 | store99-elk |  |  |  | store99-elk | Jenkins | store99 |  |
 
 # 컨벤션 & 팀 규칙
