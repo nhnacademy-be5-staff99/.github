@@ -158,11 +158,11 @@ nhnacademy
     {
         "header": {
             "isSuccessful":true,
-    		    "resultCode":200,
-    	      "resultMessage":"Success"
+            "resultCode":200,
+            "resultMessage":"Success"
         },
         "result": {
-    		    ...
+            ...
         }
     }
     
@@ -170,8 +170,8 @@ nhnacademy
     {
         "header": {
             "isSuccessful":true,
-    	      "resultCode":200,
-    	      "resultMessage":"Success"
+            "resultCode":200,
+            "resultMessage":"Success"
         },
         "result": [ ... ],
         "totalCount": 0
@@ -181,8 +181,8 @@ nhnacademy
     {
         "header": {
             "isSuccessful":false,
-    		    "resultCode":401,
-    	      "resultMessage":"잘못된 비밀번호 입니다."
+            "resultCode":401,
+            "resultMessage":"잘못된 비밀번호 입니다."
         },
         "result": null
     }
