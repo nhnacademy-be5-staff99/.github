@@ -148,7 +148,6 @@ nhnacademy
 - 커버리지 80퍼 이상 맞추기
 
 ### Controller
-
 - 도메인 넘기지 말고 dto 사용
 - Map 사용하여 값 받거나 반환하지 말기
 - 공통 응답 ResponseEntity 사용
@@ -187,17 +186,8 @@ nhnacademy
     }
     ```
     [Dooray!](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2937064454837487755)
-    
-- HTTP 응답코드
-    - 200
-    - 400
-    - 401
-    - 403
-    - 404
-    - 409
   
 **요청 메시지**
-
 - 모든 요청에 'Authorization' 헤더를 포함하여 요청합니다.
 - json body 를 포함하여 보내야 하는 메시지의 경우, `Content-Type` 헤더를 명시하여야 합니다.
 ```
