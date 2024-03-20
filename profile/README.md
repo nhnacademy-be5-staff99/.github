@@ -152,7 +152,6 @@ nhnacademy
 - 도메인 넘기지 말고 dto 사용
 - Map 사용하여 값 받거나 반환하지 말기
 - 공통 응답 ResponseEntity 사용
-    
     ```json
     // 단 건
     {
@@ -187,6 +186,7 @@ nhnacademy
         "result": null
     }
     ```
+    [Dooray!](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2937064454837487755)
     
 - HTTP 응답코드
     - 200
