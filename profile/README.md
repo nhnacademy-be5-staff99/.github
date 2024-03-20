@@ -178,7 +178,9 @@ nhnacademy
     - `header.resultMessage` 는 적절한 응답인지 확인을 위해 프로그램 로직에서 사용하는 것을 지양해야합니다.
 
 [[네트워크] REST API / Restful API란?(feat. 원칙과 네이밍 규칙)](https://ziszini.tistory.com/91)
+
 [웹 API 디자인 모범 사례 - Azure Architecture Center](https://learn.microsoft.com/ko-kr/azure/architecture/best-practices/api-design)
+
 [Dooray!](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2937064454837487755)
 
 ### Spring
