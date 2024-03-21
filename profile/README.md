@@ -212,13 +212,16 @@ nhnacademy
 - 도메인 넘기지 말고 dto 사용
 - Map 사용하여 값 받거나 반환하지 말기
 - 공통 응답 ResponseEntity 사용
+- view랑 관련된 내용만 처리
 
 ### Service
 - 서비스 레이어는 반드시 사용
 - transaction 관리 철저히 하기
+- dto 구성은 Service에서 처리
+- 여러 리포지토리 호출 가능
+- 서비스에서 서비스 호출은 지양
  
 ### Repository
-
 - 리포지토리 findOne의 경우 Optional로 반환
 - 조회 시 dto projection 사용
 - 리스트 조회 시 pagable 사용
