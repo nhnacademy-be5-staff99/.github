@@ -228,7 +228,6 @@ nhnacademy
 - 리스트 조회 시 pagable 사용
 
 ### 어댑터
-
-- 
+- FeignClient 사용
 
 ### 참고
