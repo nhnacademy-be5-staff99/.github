@@ -15,7 +15,7 @@ nhnacademy
 | store99-front | 133.186.247.247 | 192.168.0.74 | 8080 | store99-front2 | Github Action | store99 | ssh -i github_rsa store99@133.186.247.247 |
 | store99-gateway | 125.6.38.50 | 192.168.0.93 | 8080 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
 | store99-auth | 125.6.38.50 | 192.168.0.93 | 8081 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
-| store99-eureka | 125.6.38.50 | 192.168.0.93 | 8082 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
+| store99-eureka | 125.6.38.50 | 192.168.0.93 | 8761, 8762 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
 | store99-bookstore | 133.186.159.71 | 192.168.0.96 | 8080 | store99-bookstore | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71 |
 | store99-coupon | 180.210.83.81 | 192.168.0.32 | 8080 | store99-coupon | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71180.210.83.81 |
 | store99-batch | 133.186.212.35 | 192.168.0.130 | 8080 | store99-batch | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71133.186.212.35 |
