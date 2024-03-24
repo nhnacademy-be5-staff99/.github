@@ -13,7 +13,7 @@ nhnacademy
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | store99-front | 180.210.83.229 | 192.168.0.65 | 8080 | store99-front | Github Action | store99 | ssh -i github_rsa store99@180.210.83.229 |
 | store99-front | 133.186.247.247 | 192.168.0.74 | 8080 | store99-front2 | Github Action | store99 | ssh -i github_rsa store99@133.186.247.247 |
-| store99-gateway | 125.6.38.50 | 192.168.0.93 | 8760 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
+| store99-gateway | 125.6.38.50 | 192.168.0.93 | 8080 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
 | store99-auth | 125.6.38.50 | 192.168.0.93 | 8081 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
 | store99-eureka | 125.6.38.50 | 192.168.0.93 | 8761, 8762 | store99-gateway | Github Action | store99 | ssh -i github_rsa store99@125.6.38.50 |
 | store99-bookstore | 133.186.159.71 | 192.168.0.96 | 8080 | store99-bookstore | Jenkins | store99 | ssh -i github_rsa store99@133.186.159.71 |
