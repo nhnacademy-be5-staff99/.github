@@ -80,7 +80,7 @@ nhnacademy
 - 금요일마다 배포하고 github projects에 sonarqube 화면 올리기
     ![Untitled](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/c7e71132-068a-4930-8a96-6d39aa0afa98)
 
-### 코드리뷰
+### 코드리뷰 [뱅크샐러드 - 코드 리뷰 in 뱅크샐러드 개발 문화](https://blog.banksalad.com/tech/banksalad-code-review-culture/)
 - 코드 리뷰에 임하는 자세
   - 코드 리뷰 과정에서 이루어지는 것
   - 일관된 아키텍처를 유지하고 있는지
@@ -89,7 +89,7 @@ nhnacademy
   - 기술적인 지식, 노하우 공유
   - 히스토리 전달
 
-- 리뷰의 5가지 규칙 
+- 리뷰의 5가지 규칙 [카카오 - 효과적인 코드리뷰를 위한 리뷰어의 자세](https://tech.kakao.com/2022/03/17/2022-newkrew-onboarding-codereview/)
   1. 왜 개선이 필요한지 이유를 충분한 설명해 주세요.
   2. 답을 알려주기보다는 스스로 고민하고 개선 방법을 선택할 수 있게 해주세요.
   3. 코드를 클린 하게 유지하고, 일관되게 구현하도록 안내해 주세요.
@@ -106,7 +106,7 @@ nhnacademy
      https://www.samsungsds.com/kr/insights/global_code_review.html
      ```
 
-- Pn 룰
+- Pn 룰 [뱅크샐러드 - 코드 리뷰 in 뱅크샐러드 개발 문화](https://blog.banksalad.com/tech/banksalad-code-review-culture/)
   - P1: 꼭 반영해주세요 (Request changes)
   - P2: 적극적으로 고려해주세요 (Request changes)
   - P3: 웬만하면 반영해 주세요 (Comment)
