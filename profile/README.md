@@ -106,7 +106,7 @@ nhnacademy
      https://www.samsungsds.com/kr/insights/global_code_review.html
      ```
 
-- Pn 룰 [커뮤니케이션 비용을 줄이기 위한 Pn 룰]([https://blog.banksalad.com/tech/banksalad-code-review-culture/](https://blog.banksalad.com/tech/banksalad-code-review-culture/#%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%B9%84%EC%9A%A9%EC%9D%84-%EC%A4%84%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-pn-%EB%A3%B0))
+- Pn 룰 [커뮤니케이션 비용을 줄이기 위한 Pn 룰](https://blog.banksalad.com/tech/banksalad-code-review-culture/#%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%B9%84%EC%9A%A9%EC%9D%84-%EC%A4%84%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-pn-%EB%A3%B0)
   - P1: 꼭 반영해주세요 (Request changes)
   - P2: 적극적으로 고려해주세요 (Request changes)
   - P3: 웬만하면 반영해 주세요 (Comment)
