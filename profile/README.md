@@ -126,10 +126,10 @@ nhnacademy
     - 항상 push 전에 pull 먼저 하기
       
 - 참고
-  - ![](https://blog.banksalad.com/tech/banksalad-code-review-culture/#%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%B9%84%EC%9A%A9%EC%9D%84-%EC%A4%84%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-pn-%EB%A3%B0)
-  - ![]([https://blog.banksalad.com/tech/banksalad-code-review-culture/](https://blog.banksalad.com/tech/banksalad-code-review-culture/#%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0%EC%97%90-%EC%9E%84%ED%95%98%EB%8A%94-%EC%9E%90%EC%84%B8))
-  - ![](https://tech.kakao.com/2022/03/17/2022-newkrew-onboarding-codereview/)
-
+  - [삼성SDS - 글로벌기업은 코드 리뷰를 어떻게 할까요?](https://www.samsungsds.com/kr/insights/global_code_review.html)
+  - [카카오 - 효과적인 코드리뷰를 위한 리뷰어의 자세](https://tech.kakao.com/2022/03/17/2022-newkrew-onboarding-codereview/)
+  - [뱅크샐러드 - 코드 리뷰 in 뱅크샐러드 개발 문화](https://blog.banksalad.com/tech/banksalad-code-review-culture/)
+    
 ### 네이밍
 - 클래스: PascalCase
 - 변수: camelCase
