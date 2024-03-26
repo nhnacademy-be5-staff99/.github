@@ -80,8 +80,8 @@ nhnacademy
 - 금요일마다 배포하고 github projects에 sonarqube 화면 올리기
     ![Untitled](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/c7e71132-068a-4930-8a96-6d39aa0afa98)
 
-### 코드리뷰 [뱅크샐러드 - 코드 리뷰 in 뱅크샐러드 개발 문화](https://blog.banksalad.com/tech/banksalad-code-review-culture/)
-- 코드 리뷰에 임하는 자세
+### 코드리뷰
+- 코드 리뷰에 임하는 자세 [코드 리뷰에 임하는 자세](https://blog.banksalad.com/tech/banksalad-code-review-culture/#%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0%EC%97%90-%EC%9E%84%ED%95%98%EB%8A%94-%EC%9E%90%EC%84%B8)
   - 코드 리뷰 과정에서 이루어지는 것
   - 일관된 아키텍처를 유지하고 있는지
   - 다른 해결 방법에 대한 의견 제시
@@ -106,7 +106,7 @@ nhnacademy
      https://www.samsungsds.com/kr/insights/global_code_review.html
      ```
 
-- Pn 룰 [뱅크샐러드 - 코드 리뷰 in 뱅크샐러드 개발 문화](https://blog.banksalad.com/tech/banksalad-code-review-culture/)
+- Pn 룰 [커뮤니케이션 비용을 줄이기 위한 Pn 룰]([https://blog.banksalad.com/tech/banksalad-code-review-culture/](https://blog.banksalad.com/tech/banksalad-code-review-culture/#%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%B9%84%EC%9A%A9%EC%9D%84-%EC%A4%84%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-pn-%EB%A3%B0))
   - P1: 꼭 반영해주세요 (Request changes)
   - P2: 적극적으로 고려해주세요 (Request changes)
   - P3: 웬만하면 반영해 주세요 (Comment)
