@@ -124,9 +124,9 @@ nhnacademy
 - 변수: camelCase
 - ENUM, 상수: UPPER_CASE
 - 정적 파일: snake_case
-- package: kebab-case
+- package: snake_case
 - DB: snake_case
-- branch명: snake_case
+- branch명: kebab-case
 - 변수명에 자료형 Optional, List 명시
     - memoOptional, memoList
 
