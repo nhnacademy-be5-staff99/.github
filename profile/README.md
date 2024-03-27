@@ -126,7 +126,7 @@ nhnacademy
 - 정적 파일: snake_case
 - package: kebab-case
 - DB: snake_case
-- branch명: kebab-case
+- branch명: snake_case
 - 변수명에 자료형 Optional, List 명시
     - memoOptional, memoList
 
