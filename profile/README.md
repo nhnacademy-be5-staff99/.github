@@ -147,12 +147,12 @@ nhnacademy
     - Gateway -> Bookstore
       - url: /v1/…
   - api
-    -  Front -> Gateway
-      -  url: /api/bookstore/v1/…
-      -  Hearder: X-USER-TOKEN : jwt token
-    -  Gateway -> Bookstore
-      -  url: /v1/…
-      -  Header: X-USER-ID : Long userId
+    - Front -> Gateway
+      - url: /api/bookstore/v1/…
+      - Hearder: X-USER-TOKEN : jwt token
+    - Gateway -> Bookstore
+      - url: /v1/…
+      - Header: X-USER-ID : Long userId
 - REST API 원칙 지키기
 - 중첩은 3단계까지
 - API 명세 Gihub Projects 이용하여 공유
