@@ -109,7 +109,7 @@ nhnacademy
 
 
 - pull reqeust 지정 reviewer(2명) 승인 후 merge하기
-    ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/2e6b79f8-9580-4bac-8dae-db2068a78495)
+    ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/9eed4483-6ad7-4687-931b-a8120680d9f4)
     - 동영, 서연 -> 승규 -> 진규, 아현
     - 서연, 승규 -> 진규 -> 아현, 현철
     - 승규, 진규 -> 아현 -> 현철, 효겸
