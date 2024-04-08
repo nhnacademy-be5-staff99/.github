@@ -134,7 +134,6 @@ nhnacademy
 - 변수명에 자료형 Optional, List 명시
     - memoOptional, memoList
 
-  
 ### API
 - API 명세
   - api/bookstore/v1/…
@@ -250,6 +249,34 @@ nhnacademy
     ```
 - 프론트는 부트 스트랩 사용하여 반응형
 - properties의 DB 정보는 암호화
+- Java Doc 사용
+  ```java
+      /**
+     * 한 줄 설명
+     * <p>상세한 설명
+     *
+     * @param
+     * @return
+     * @throws
+     * @author
+     * @see
+     */
+  ```
+  - 참고
+    ```
+    /** Enumeration of HTTP status codes.
+     *
+     * <p>The HTTP status code series can be retrieved via {@link #series()}.
+     *
+     * @author Arjen Poutsma
+     * @author Sebastien Deleuze
+     * @author Brian Clozel
+     * @since 3.0
+     * @see HttpStatus.Series
+     * @see <a href="https://www.iana.org/assignments/http-status-codes">HTTP Status Code Registry</a>
+     * @see <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">List of HTTP status codes - Wikipedia</a>
+     */
+   ```
 
 ### 테스트
 - 테스트는 h2 사용
