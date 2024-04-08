@@ -250,9 +250,10 @@ nhnacademy
 - 프론트는 부트 스트랩 사용하여 반응형
 - properties의 DB 정보는 암호화
 - Java Doc 사용
-  ```java
-      /**
+  ```
+    /**
      * 한 줄 설명
+     *
      * <p>상세한 설명
      *
      * @param
@@ -264,7 +265,8 @@ nhnacademy
   ```
   - 참고
     ```
-    /** Enumeration of HTTP status codes.
+    /**
+     * Enumeration of HTTP status codes.
      *
      * <p>The HTTP status code series can be retrieved via {@link #series()}.
      *
