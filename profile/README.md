@@ -222,6 +222,8 @@ nhnacademy
     - `header.resultMessage` 는 사람을 위해 제공되는 필드입니다.
     - `header.resultMessage` 는 이해하기 쉬운 형태로 예고 없이 변경될 수 있습니다.
     - `header.resultMessage` 는 적절한 응답인지 확인을 위해 프로그램 로직에서 사용하는 것을 지양해야합니다.
+ 
+[REST API 설계 원칙](https://kmkunk.tistory.com/139)
 
 [[네트워크] REST API / Restful API란?(feat. 원칙과 네이밍 규칙)](https://ziszini.tistory.com/91)
 
