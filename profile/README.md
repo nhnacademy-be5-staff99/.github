@@ -38,13 +38,37 @@
 # CI/CD
 
 # ERD
+![STORE99 V1 6](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/75dd00a7-227e-494e-902f-db47aef8746a)
+
 
 # Project Management
-## WBS
 
-## Github Roadmap
+### WBS
+Github Project 로 각 작업마다 이슈로 만들어 관리
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/86015f30-869f-4652-88b4-a781ab41aa64)
 
-## Github Board
+
+### Roadmap - 일정관리
+Github Project 의 Roadmap 을 이용한 멤버별 일정 관리
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/9773dc2c-c6bf-4e76-8d65-a936c49c2cb1)
+
+
+### Board - 작업 관리
+
+Github Project 의 Board 을 이용한 멤버별 작업 관리
+- Todo, InProgress, CodeReview, Delay, Done 으로 나누어 상태 확인
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/9caeed8c-b0e3-4ec9-9f94-5e3383db2516)
+
+
+### Scrum
+Scrum 을 Github Issue 로 관리
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/1f59922a-2bd8-4e2b-bfd0-0f9c413e3937)
+
+
+### Code Review
+
+### 기술 공유
+
 
 # Test
 ## Test Coverage
