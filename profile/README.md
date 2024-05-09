@@ -19,7 +19,7 @@
 
 <br>
 
-# Development Environment
+# 🌏 Development Environment
 ### 개발 도구
 ### 개발 언어
 ### 빌드 도구
@@ -32,16 +32,16 @@
 ### ECT
 
 
-# Project Architecture
+# 🏗️ Project Architecture
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
 
-# CI/CD
+# 🚀 CI/CD
 
-# ERD
+# 💿 ERD
 ![STORE99 V1 6](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/75dd00a7-227e-494e-902f-db47aef8746a)
 
 
-# Project Management
+# 🤖 Project Management
 
 ### WBS
 Github Project 로 각 작업마다 이슈로 만들어 관리
@@ -70,14 +70,14 @@ Scrum 을 Github Issue 로 관리
 ### 기술 공유
 
 
-# Test
+# 🧪 Test
 ## Test Coverage
 
 ## Black Box Test
 ## Unit Test
 
 
-# Member Role
+# 🖐️ Member Role
 ## 공통
 - 프로젝트 요구사항 분선
 - WBS 작성
