@@ -21,15 +21,30 @@
 
 # 🌏 Development Environment
 ### 개발 도구
+![intellijidea](https://img.shields.io/badge/Intellij-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
+
 ### 개발 언어
+![Java](https://img.shields.io/badge/Java%2011-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+
 ### 빌드 도구
+
+
 ### 개발
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![SpringSecurity](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+
 ### 테스트
 ### DB
 ### 검색엔진
 ### UI
 ### Cloud
+### 배포
+
+![Github](https://img.shields.io/badge/GitHub%20Action-100000?style=for-the-badge&logo=github&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+
 ### ECT
+
+![Gmail](https://img.shields.io/badge/Gamil-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 
 
 # 🏗️ Project Architecture
