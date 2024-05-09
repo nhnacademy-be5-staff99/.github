@@ -5,6 +5,8 @@
 
 **Github :** https://github.com/nhnacademy-be5-staff99
 
+**개발 기간 :** 2024.03.01 - 2024.05.22
+
 <br>
 
 # Members
@@ -17,8 +19,83 @@
 
 <br>
 
+# Development Environment
+### 개발 도구
+### 개발 언어
+### 빌드 도구
+### 개발
+### 테스트
+### DB
+### 검색엔진
+### UI
+### Cloud
+### ECT
+
+
 # Project Architecture
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/4cce8cdb-b0ce-4b50-8575-285b1390f7be)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
+
+# CI/CD
+
+# ERD
+
+# Project Management
+## WBS
+
+## Github Roadmap
+
+## Github Board
+
+# Test
+## Test Coverage
+
+## Black Box Test
+## Unit Test
 
 
+# Member Role
+## 공통
+- 프로젝트 요구사항 분선
+- WBS 작성
+- DB 설계
+- CI/CD 환경 구축
+- API 스펙 정의
+- 도메인 준비
+- 화면 구성
+- 팀 규칙 정립
+- 역할 분담
+
+## 김승규
+### 장바구니
+### 주문
+### 결제
+
+### 기타
+- 코드 스타일 정립
+- Git 컨벤션 통일
+
+## 노동영
+### Logging
+### 도서
+
+## 송아현
+### 인증/인가
+### 마이페이지
+### 단순 검색
+### 쿠폰
+
+## 송진규
+### 태그
+### 포인트
+
+### 기타
+- 템플릿 정하기
+
+## 이서연
+### 좋아요
+### 리뷰
+
+## 진효겸
+### 회원
+### 검색
 
