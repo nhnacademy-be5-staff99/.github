@@ -1,6 +1,4 @@
-# Store99
-by Staff 99
-nhnacademy
+![header](https://capsule-render.vercel.app/api?type=waving&height=250&color=DBD5D1&text=Store99&fontAlignY=32&desc=from%20CNU-NHN%20Academy&descAlignY=50)
 
 <br>
 
