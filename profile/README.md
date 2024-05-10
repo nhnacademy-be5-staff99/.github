@@ -103,24 +103,21 @@ Scrum 을 Github Issue 로 관리
 ## Test Coverage
 ### bookstore 테스트 커버리지
 
+목표: 라인 커버리지 80% 이상 (**년 *월 *일 기준 **%)
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/aba1fa7d-a9c1-41ba-b5ca-6faea7eb0ca6)
 
 
 ## Black Box Test
+
+
 ## Unit Test
 
 
 # 🖐️ Member Role
 ## 공통
-- 프로젝트 요구사항 분선
-- WBS 작성
-- DB 설계
-- CI/CD 환경 구축
-- API 스펙 정의
-- 도메인 준비
-- 화면 구성
-- 팀 규칙 정립
-- 역할 분담
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/637433c2-1543-4543-b87a-542409134a38)
+
+
 
 ## 김승규
 ### 장바구니
