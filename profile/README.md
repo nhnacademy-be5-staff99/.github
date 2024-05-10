@@ -127,11 +127,258 @@ Scrum 을 Github Issue 로 관리
 
 ## White Box Test(Unit Test)
 ### Controller Test
+RestDocSupport와 @WebMvcTest를 활용하여 Controller 단위 테스트 구현
+
+#### RestDocSupport.java
+Spring REST Docs을 위한 기능과 관리자 권한을 반환하는 서비스를 Mocking하는 기능이 들어있는 컨트롤러 테스트 지원을 위한 클래스
+```java
+/**
+ * Rest docs를 편리하게 사용하기 위한 Support 클래스
+ * @author seunggyu-kim 
+ */
+@Disabled
+@Import(RestDocsConfig.class)
+@ExtendWith({RestDocumentationExtension.class})
+public abstract class RestDocSupport {
+    @Autowired
+    protected MockMvc mockMvc;
+
+    @Autowired
+    protected ObjectMapper objectMapper;
+
+    @Autowired
+    protected RestDocumentationResultHandler restDoc;
+
+    // 관리자 여부 테스트 용으로 사용
+    // ex) BDDMockito.given(adminCheckService.isAdmin(Mockito.anyLong())).willReturn(true);
+    @MockBean
+    protected AdminCheckService adminCheckService;
+
+    /**
+     * Spring Rest Docs를 사용하기 위한 설정
+     *
+     * @param webApplicationContext
+     * @param restDocumentationContextProvider
+     */
+    @BeforeEach
+    public void setup(
+            final WebApplicationContext webApplicationContext,
+            final RestDocumentationContextProvider restDocumentationContextProvider
+    ) {
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
+                .apply(MockMvcRestDocumentation.documentationConfiguration(restDocumentationContextProvider))
+                .alwaysDo(MockMvcResultHandlers.print())
+                .alwaysDo(restDoc)
+                .addFilters(new CharacterEncodingFilter("UTF-8", true))     // 한글 깨짐 방지 처리
+                .build();
+    }
+}
+```
+#### 컨트롤러 테스트 예시(AdminCheckControllerTest.java)
+given, when, then으로 나누어 BDD 방식으로 구현
+```java
+@WebMvcTest(AdminCheckController.class)
+class AdminCheckControllerTest extends RestDocSupport {
+    /**
+     * 관리자 여부 확인 테스트
+     * <p>사용자가 관리자 권한을 갖고있는 경우
+     *
+     * @throws Exception
+     */
+    @DisplayName("관리자 여부 확인 - 관리자인 경우")
+    @Test
+    void checkAdmin_true() throws Exception {
+        // given
+        Long userId = Mockito.anyLong();
+        BDDMockito.given(adminCheckService.isAdmin(userId)).willReturn(true);
+
+        // when
+        String response = mockMvc.perform(
+                        MockMvcRequestBuilders.get("/v1/admin/check")
+                                .header("X-USER-ID", userId))
+                .andExpectAll(
+                        MockMvcResultMatchers.status().isOk()
+                )
+                .andReturn().getResponse().getContentAsString();
+
+        // then
+        CommonHeader commonHeader = CommonHeader.builder().httpStatus(HttpStatus.OK).resultMessage("Success").build();
+        CommonResponse<AdminCheckResponse> commonResponse =
+                CommonResponse.<AdminCheckResponse>builder().header(commonHeader).result(new AdminCheckResponse(true))
+                        .build();
+        String expected = objectMapper.writeValueAsString(commonResponse);
+        Assertions.assertThat(response).isEqualTo(expected);
+    }
+    ...(생략)
+}
+```
 
 ### Service Test
+@ExtendWith(MockitoExtension.class)를 활용하여 Service 단위 테스트 구현
+- given, when, then으로 나누어 BDD 방식으로 구현
+- MockedStatic을 이용하여 XUserIdThreadLocal에 저장된 xUiserId 변경
+```java
+@ExtendWith(MockitoExtension.class)
+class CartServiceImplTest {
+    @InjectMocks
+    private CartServiceImpl cartService;
+    @Mock
+    private CartRepository cartRepository;
+    @Mock
+    private UserRepository userRepository;
+    @Mock
+    private BookRepository bookRepository;
+
+    ...(생략)...
+
+    @Test
+    @DisplayName("장바구니에 책 추가 - 책이 없을 경우")
+    void addBookToCartWhenBookNotFound() {
+        try (MockedStatic<XUserIdThreadLocal> utilities = mockStatic(XUserIdThreadLocal.class)) {
+            // given
+            CartItemRequest request = new CartItemRequest(1L, 1);
+            given(XUserIdThreadLocal.getXUserId()).willReturn(1L);
+            given(cartRepository.findByUser_IdAndBook_Id(1L, 1L)).willReturn(Optional.empty());
+            given(userRepository.findById(1L)).willReturn(Optional.of(User.builder().id(1L).build()));
+            given(bookRepository.findById(1L)).willReturn(Optional.empty());
+
+            // when & then
+            assertThatThrownBy(() -> cartService.addBookToCart(request))
+                    .isInstanceOf(CartBadRequestException.class)
+                    .hasMessageContaining("Book not found (book id: 1)");
+            verify(cartRepository, never()).save(Mockito.any(Cart.class));
+        }
+    }
+}
+```
 
 ### Repository Test
+@DataJpaTest를 활용하여 Repository 단위 테스트 구현
+- given, when, then으로 나누어 BDD방식으로 테스트
 
+```java
+@DataJpaTest
+class CartRepositoryImplTest {
+    @Autowired
+    private TestEntityManager entityManager;
+
+    @Autowired
+    private CartRepository cartRepository;
+
+    private User user;
+    private Book book1;
+    private Book book2;
+
+    @BeforeEach
+    void setUp() {
+        Grade grade = Grade.builder()
+                .gradeName("BASIC")
+                .gradeStartCost(0)
+                .gradeEndCost(1000000)
+                .gradeRatio(10)
+                .build();
+        entityManager.persist(grade);
+
+        Auth auth = Auth.builder()
+                .authName("USER")
+                .build();
+        entityManager.persist(auth);
+
+        Consumer consumer = Consumer.builder()
+                .consumerName("consumer name")
+                .consumerEmail("user@naver.com")
+                .consumerPhone("01012345678")
+                .consumerPassword("$2a$12$S7/5PoUN5HtdFEGZoEByg.BF45kovwhZaiR5fKwXtrXmJ.QlfGd7S")
+                .build();
+        entityManager.persist(consumer);
+
+        user = User.builder()
+                .userBirthdate(LocalDate.parse("2007-12-03"))
+                .grade(grade)
+                .auth(auth)
+                .consumers(consumer)
+                .build();
+        entityManager.persist(user);
+
+        book1 = Book.builder()
+                .bookIsbn13("1234567890123")
+                .bookIsbn10("1234567890")
+                .bookTitle("book title1")
+                .bookContents("book contents1")
+                .bookDescription("book description1")
+                .bookPublisher("book publisher")
+                .bookDate(LocalDateTime.parse("2007-12-03T10:15:30"))
+                .bookPrice(10000)
+                .bookSalePrice(9000)
+                .bookIsPacked(false)
+                .bookThumbnailUrl("https://via.placeholder.com/200x303")
+                .build();
+        entityManager.persist(book1);
+
+        book2 = Book.builder()
+                .bookIsbn13("9234567890123")
+                .bookIsbn10("9234567890")
+                .bookTitle("book title2")
+                .bookContents("book contents2")
+                .bookDescription("book description2")
+                .bookPublisher("book publisher")
+                .bookDate(LocalDateTime.parse("2007-12-03T10:15:30"))
+                .bookPrice(20000)
+                .bookSalePrice(15000)
+                .bookIsPacked(false)
+                .bookThumbnailUrl("https://via.placeholder.com/200x303")
+                .build();
+        entityManager.persist(book2);
+    }
+
+    @Test
+    @DisplayName("사용자 ID로 장바구니 아이템 조회")
+    void getCartItemsByUser() {
+        // given
+        Cart cart1 = Cart.builder()
+                .cartAmount(1)
+                .user(user)
+                .book(book1)
+                .build();
+        entityManager.persist(cart1);
+
+        Cart cart2 = Cart.builder()
+                .cartAmount(2)
+                .user(user)
+                .book(book2)
+                .build();
+        entityManager.persist(cart2);
+
+        // when
+        List<CartItemResponse> cartItemResponses = cartRepository.getCartItemsByUser(user.getId());
+
+        // then
+        List<CartItemResponse> expectedCartItemResponses = new ArrayList<>();
+        CartItemResponse expectedCartItemResponse1 = new CartItemResponse(
+                book1.getId(),
+                book1.getBookTitle(),
+                book1.getBookPrice(),
+                book1.getBookSalePrice(),
+                book1.getBookThumbnailUrl(),
+                book1.getBookStock(),
+                cart1.getCartAmount()
+        );
+        expectedCartItemResponses.add(expectedCartItemResponse1);
+        CartItemResponse expectedCartItemResponse2 = new CartItemResponse(
+                book2.getId(),
+                book2.getBookTitle(),
+                book2.getBookPrice(),
+                book2.getBookSalePrice(),
+                book2.getBookThumbnailUrl(),
+                book2.getBookStock(),
+                cart2.getCartAmount()
+        );
+        expectedCartItemResponses.add(expectedCartItemResponse2);
+
+        assertThat(cartItemResponses).usingRecursiveComparison().isEqualTo(expectedCartItemResponses);
+    }
+}
+```
 
 # 🖐️ Member Role
 ## 공통
@@ -146,6 +393,7 @@ Scrum 을 Github Issue 로 관리
 - 역할 분담
 
 ## 김승규
+### 카테고리
 ### 장바구니
 ### 주문
 ### 결제
@@ -153,6 +401,11 @@ Scrum 을 Github Issue 로 관리
 ### 기타
 - 코드 스타일 정립 / Git 컨벤션 통일 / PR 및 팀 규칙 정립
   - [convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md)
+- JPA 엔티티
+- Spring REST docs
+- API 서버에서 UserId와 권한 관련 공통화
+- 응답 객체 제작 및 ResponseBodyAdvice 이용한 공통화
+- 관리자 권한 검사
 
 ## 노동영
 ### Logging
