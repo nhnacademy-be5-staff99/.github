@@ -7,7 +7,7 @@
 
 **개발 기간 :** 2024.03.01 - 2024.05.22
 
-**컨벤션 :** [컨벤션]([convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md))
+**컨벤션 :** [convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md)
 
 <br>
 
@@ -118,9 +118,8 @@ Scrum 을 Github Issue 로 관리
 ### 결제
 
 ### 기타
-- 코드 스타일 정립
-- Git 컨벤션 통일
-  - [컨벤션]([convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md))
+- 코드 스타일 정립 / Git 컨벤션 통일 / PR 및 팀 규칙 정립
+  - [convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md)
 
 ## 노동영
 ### Logging
