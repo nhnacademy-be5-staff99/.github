@@ -1,4 +1,4 @@
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/8ee6d21b-1e60-4fd3-a145-974d5aa514f8)![header](https://capsule-render.vercel.app/api?type=waving&height=250&color=DBD5D1&text=Store99st&fontAlignY=32&desc=from%20CNU-NHN%20Academy&descAlignY=50)
+![header](https://capsule-render.vercel.app/api?type=waving&height=250&color=DBD5D1&text=Store99st&fontAlignY=32&desc=from%20CNU-NHN%20Academy&descAlignY=50)
 
 # 📖 온라인 서점, Store99st
 **배포 url :** https://store99st.shop, https://www.store99st.shop
