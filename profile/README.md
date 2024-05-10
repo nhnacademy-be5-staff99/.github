@@ -32,7 +32,7 @@
 ![Java](https://img.shields.io/badge/Java%2011-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ### 빌드 도구
-![maven](https://camo.githubusercontent.com/44942b8d24da4d9588d5d3794e338cd9a31530588b6709d7be713f7e332697a7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6176656e2d4337314133363f7374796c653d666c6174266c6f676f3d4170616368654d6176656e266c6f676f436f6c6f723d7768697465)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/134525851/46dd7801-40a8-4161-8ecd-ac04bb56ccb7)
 
 ### 개발
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![SpringSecurity](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white) ![SpringCloud](https://camo.githubusercontent.com/50acff628faae8cd4a63534f928755f865997bfee8c9949760f845ae410adf42/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f737072696e6720636c6f75642d3644423333463f7374796c653d666f722d7468652d6261646765266c6f676f3d737072696e67266c6f676f436f6c6f723d7768697465) 
