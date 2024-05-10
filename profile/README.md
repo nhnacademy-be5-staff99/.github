@@ -101,7 +101,9 @@ Scrum 을 Github Issue 로 관리
 
 # 🧪 Test
 ## Test Coverage
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/a32ecc47-f88f-45bc-b6d1-7f5ae523ec03)
+### bookstore 테스트 커버리지
+
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/aba1fa7d-a9c1-41ba-b5ca-6faea7eb0ca6)
 
 
 ## Black Box Test
