@@ -125,10 +125,18 @@ Scrum 을 Github Issue 로 관리
 
 # 🧪 Test
 ## Test Coverage
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/a32ecc47-f88f-45bc-b6d1-7f5ae523ec03)
+### bookstore 테스트 커버리지
+
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/aba1fa7d-a9c1-41ba-b5ca-6faea7eb0ca6)
 
 
 ## Black Box Test
+
+
+
+## Unit Test
+
+
 - 매 주 개발내용을 배포 시 페이지의 모든 동작을 검사
 - 기존 기능과 새로 배포되는 기능을 중점적으로 사이드 이펙트 유무 파악
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/5f1e3a32-51f2-4df5-a6d4-259898f4c3bc)
@@ -391,17 +399,13 @@ class CartRepositoryImplTest {
 }
 ```
 
+
 # 🖐️ Member Role
 ## 공통
-- 프로젝트 요구사항 분선
-- WBS 작성
-- DB 설계
-- CI/CD 환경 구축
-- API 스펙 정의
-- 도메인 준비
-- 화면 구성
-- 팀 규칙 정립
-- 역할 분담
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/7cd05dca-f174-43df-b32e-ae21cce5a715)
+
+
+
 
 ## 김승규
 ### 카테고리
