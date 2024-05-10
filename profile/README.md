@@ -480,9 +480,6 @@ class CartRepositoryImplTest {
   - join은 LAZY로
 - Spring REST docs 적용
   - Spring REST Docs을 위한 기능과 관리자 권한을 반환하는 서비스를 Mocking하는 기능이 들어있는 컨트롤러 테스트 지원을 위한 RestDocSupport 클래스를 만들어서 컨트롤러 테스트 공통화
-- API 서버에서 UserId와 권한 관련 공통화
-- 응답 객체 제작 및 ResponseBodyAdvice 이용한 공통화
-- 관리자 권한 검사
 
 ## 노동영
 ### Front Server 이 중화, SSL 설정
