@@ -90,8 +90,11 @@ Github Project 의 Board 을 이용한 멤버별 작업 관리
 Scrum 을 Github Issue 로 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/1f59922a-2bd8-4e2b-bfd0-0f9c413e3937)
 
+### 이슈 관리
+에러나 버그 등 이슈 발생 시 Github Issue 로 등록하여 관리
 
 ### Code Review
+
 
 ### 기술 공유
 
