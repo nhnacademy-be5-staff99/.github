@@ -420,9 +420,113 @@ class CartRepositoryImplTest {
 
 ## 송아현
 ### 인증/인가
+
+**인증 서버**
+- Spring Security 에 Custom Filter 를 만들어 로그인 진행
+- 로그인 성공 시 Redis 에 userId 저장
+- Redis Key 를 포함한 JWT Token 발급하여 header 로 전달
+- 로그아웃 시 Custom Logout Filter 를 거쳐 로그아웃 진행 & Redis 에서 key 삭제
+
+**프론트 서버** 
+- 클라이언트에게 Cookie 로 JWT 토큰 전달
+- 이후 로그인이 필요한 api 요청 시 JWT 토큰을 함께 전달
+
+**Gateway 서버**
+- 로그인이 필요한 api 요청 시 전달 받은 JWT 토큰의 내용을 확인하여 userId 확인
+- 확인된 userId 를 bookstore 서버에 header로 전달
+- (NHN Cloud 의 보안 그룹을 내부 ip 로 한정하여 다른 ip 에서 접근 불가함)
+
+### Login Sequence
+
+```mermaid
+
+sequenceDiagram
+
+actor c as Client
+participant front as Front
+participant redis as Redis
+participant gateway as Gateway
+participant auth as Auth
+participant store as BookStore
+
+c->>front: 1. 로그인 페이지 요청
+front-->>c: 2. 로그인 페이지 응답
+c->>front: 3. Email, PW 입력
+front->>gateway: 4. 로그인 요청
+gateway->>auth: 4. 로그인 요청
+auth-->>gateway: 5. 로그인 api 호출
+gateway->>store: 5. 로그인 api 호출
+alt 로그인 실패
+	store-->>gateway: 6. 회원 정보 없음 or ID/PW 불일치
+	gateway->>auth: 6. 회원 정보 없음 or ID/PW 불일치
+	auth-->>gateway: 7. 로그인 실패
+	gateway-->>front: 7. 로그인 실패
+	front-->>c: 7. 로그인 실패
+else 로그인 성공
+	store-->>gateway: 6. 로그인 성공 & 구매자 id 전달
+	gateway->>auth: 6. 로그인 성공 & 구매자 id 전달
+	auth-->>redis: 7. UUID 저장
+    Note over auth: AccessToken 생성
+    auth-->>gateway: 8. Header 에 AccessToken 담아서 전달
+    gateway-->>front: 9. Header의 Set-Cookie 에 Token 담아서 전달
+    front-->>c: 9. 로그인 성공, 쿠키 전달
+end
+
+```
+
+### Authorization Sequence
+
+> 예시 : 마이페이지 요청
+
+```mermaid
+
+sequenceDiagram
+
+actor c as Client
+participant front as Front
+participant redis as Redis
+participant gateway as Gateway
+participant auth as Auth
+participant store as BookStore
+
+c->>front: 1. 마이페이지 요청
+front->>+gateway: 1. 마이페이지 요청
+Note over gateway: 토큰 만료 여부 확인
+alt 토큰 만료
+    gateway-->>front: 2. 인증 실패
+    front-->>c: 3. 로그인 페이지 리다이렉트
+else 토큰 사용 가능
+    gateway-->>redis: 2. UUID 로 구매자 id 조회
+    redis->>gateway: 3. 구매자 id 전달
+    gateway->>store: 4. header에 구매자 id 담아 마이페이지 api 호출
+    Note over store: 구매자 id 로 회원 권한 조회
+    alt 권한 없음
+        store-->>gateway: 5. 요청 실패 응답
+        gateway-->>front: 5. 요청 실패 응답
+        front-->>c: 6. 로그인 페이지 리다이렉트
+    
+    else 권한 있음
+        store-->>gateway: 5. 회원 정보 전달
+        gateway-->>front: 5. 회원 정보 전달
+        front-->>c: 6. 마이페이지 응답
+    end
+end
+
+```
+
 ### 마이페이지
+- 회원 기본 정보, 현재 등급, 현재 사용 가능 포인트 확인
+- Daum 도로명 주소 API 를 이용한 주소 관리
+- 포인트 적립/사용 내역 확인
+
 ### 단순 검색
-### 쿠폰
+- Index 의 검색창에 입력한 검색어가 도서명이나 저자명에 포함된 도서 리스트 반환
+- pagenation 구현
+
+### 쿠폰 (진행중)
+- 생일 쿠폰, 웰컴 쿠폰, 도서 쿠폰, 카테고리 쿠폰 생성,발급 api 구현
+- 매월 생일자에 대해 생일 쿠폰 발급
+- Rabbit MQ 를 사용해 대규모 트래픽 발생에 대비 
 
 ## 송진규
 ### 태그
