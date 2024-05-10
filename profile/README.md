@@ -68,7 +68,7 @@
 
 
 # 🏗️ Project Architecture
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8c****f37860b99b)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
 
 # 🚀 CI/CD
 ![GithubProject](https://camo.githubusercontent.com/85f6488e887286e7e439363f8c759d1dd9b9688522e0b5bf82e661185e14249b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476974687562253230416374696f6e2d3230383846463f7374796c653d666c6174266c6f676f3d676974687562616374696f6e73266c6f676f436f6c6f723d7768697465) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)
