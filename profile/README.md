@@ -419,8 +419,16 @@ class CartRepositoryImplTest {
 - 관리자 권한 검사
 
 ## 노동영
+### Front Server 이중화 
 ### Logging
+- Repository에 NHN Cloud Log&Crash을 적용하여 클라우드에서 인스턴스 로그 검색 가능
+- 프로젝트에 로깅 적용 정리 후 Github Projects에 기술공유 Issue 공유
+   - https://github.com/nhnacademy-be5-staff99/store99-ect/issues/16
 ### 도서
+- Query Dsl, Pageable, fetch join, DTO projection, Transform을 사용한 도서 데이터 사용
+- 카테고리기준으로 도서 검색
+- 도서 상세페이지 조회 가능
+- 인덱스 페이지에 베스트, 신상 도서 추가 (진행중)
 
 ## 송아현
 ### 인증/인가
