@@ -125,10 +125,18 @@ Scrum 을 Github Issue 로 관리
 
 # 🧪 Test
 ## Test Coverage
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/a32ecc47-f88f-45bc-b6d1-7f5ae523ec03)
+### bookstore 테스트 커버리지
+
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/aba1fa7d-a9c1-41ba-b5ca-6faea7eb0ca6)
 
 
 ## Black Box Test
+
+
+
+## Unit Test
+
+
 - 매 주 개발내용을 배포 시 페이지의 모든 동작을 검사
 - 기존 기능과 새로 배포되는 기능을 중점적으로 사이드 이펙트 유무 파악
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/5f1e3a32-51f2-4df5-a6d4-259898f4c3bc)
@@ -391,6 +399,7 @@ class CartRepositoryImplTest {
 }
 ```
 
+
 # 🖐️ Member Role
 ## 공통
 - 프로젝트 요구사항 분석
@@ -476,8 +485,18 @@ class CartRepositoryImplTest {
 - 관리자 권한 검사
 
 ## 노동영
+### Front Server 이 중화, SSL 설정
+- 팀 Domain의 SSL 인증서를 NGINX에 적용하여 HTTPS통신 활성화
+- Front Server를 NHN LoadBalancer에 연결하여 이중화
 ### Logging
+- Repository에 NHN Cloud Log&Crash을 적용하여 클라우드에서 인스턴스 로그 검색 가능
+- 프로젝트에 로깅 적용 정리 후 Github Projects에 기술공유 Issue 공유
+   - https://github.com/nhnacademy-be5-staff99/store99-ect/issues/16
 ### 도서
+- Query Dsl, Pageable, fetch join, DTO projection, Transform을 사용한 도서 데이터 사용
+- 카테고리기준으로 도서 검색
+- 도서 상세페이지 조회 가능
+- 인덱스 페이지에 베스트, 신상 도서 추가 (진행중)
 
 ## 송아현
 ### 인증/인가
