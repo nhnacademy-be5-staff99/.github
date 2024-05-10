@@ -75,9 +75,7 @@
 # 🏗️ Project Architecture
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
 
-
 # 🚀 CI/CD
-
 
 # 💿 ERD
 ![STORE99 V1 6](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/75dd00a7-227e-494e-902f-db47aef8746a)
