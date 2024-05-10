@@ -135,7 +135,7 @@ Scrum 을 Github Issue 로 관리
 - 기존 기능과 새로 배포되는 기능을 중점적으로 사이드 이펙트 유무 파악
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/5f1e3a32-51f2-4df5-a6d4-259898f4c3bc)
 
-### [배포](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/13)
+### [테스트 체크리스트](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/13)
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/bf307fd8-c4bc-4b60-a066-9e306d7620be)
 
 ## White Box Test(Unit Test)
