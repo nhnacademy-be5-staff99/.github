@@ -449,6 +449,6 @@ class CartRepositoryImplTest {
 ### 리뷰
 
 ## 진효겸
-### 회원
+### 회원 가입
 ### 검색
 
