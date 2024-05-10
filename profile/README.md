@@ -419,7 +419,7 @@ class CartRepositoryImplTest {
 - 관리자 권한 검사
 
 ## 노동영
-### Front Server 이중화
+### Front Server 이 중화, SSL 설정
 - 팀 Domain의 SSL 인증서를 NGINX에 적용하여 HTTPS통신 활성화
 - Front Server를 NHN LoadBalancer에 연결하여 이중화
 ### Logging
