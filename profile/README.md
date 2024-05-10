@@ -133,6 +133,8 @@ Scrum 을 Github Issue 로 관리
 ## Black Box Test
 - 매 주 개발내용을 배포 시 페이지의 모든 동작을 검사
 - 기존 기능과 새로 배포되는 기능을 중점적으로 사이드 이펙트 유무 파악
+
+### Black box test flow
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/5f1e3a32-51f2-4df5-a6d4-259898f4c3bc)
 
 ### [테스트 체크리스트](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/13)
