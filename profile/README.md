@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&height=250&color=DBD5D1&text=Store99st&fontAlignY=32&desc=from%20CNU-NHN%20Academy&descAlignY=50)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/8ee6d21b-1e60-4fd3-a145-974d5aa514f8)![header](https://capsule-render.vercel.app/api?type=waving&height=250&color=DBD5D1&text=Store99st&fontAlignY=32&desc=from%20CNU-NHN%20Academy&descAlignY=50)
 
 # 📖 온라인 서점, Store99st
 **배포 url :** https://store99st.shop, https://www.store99st.shop
@@ -74,7 +74,7 @@ NHN Cloud Log & Crash Search
 
 
 # 🏗️ Project Architecture
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/be4894e6-d595-41ba-a33d-eb23e4b6ae25)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/331ce1d6-0fcc-4a57-8f11-c1ca68ca781d)
 
 # 🚀 CI/CD
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/fb136326-fc08-4d13-ac7a-1bb282e700da)
