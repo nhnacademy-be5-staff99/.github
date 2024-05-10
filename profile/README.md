@@ -59,7 +59,7 @@
 
 
 # 🏗️ Project Architecture
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/e5cd4657-a4c7-46bb-a2f4-49dc1b8e7b62)
 
 # 🚀 CI/CD
 
