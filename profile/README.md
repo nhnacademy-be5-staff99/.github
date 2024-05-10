@@ -419,7 +419,9 @@ class CartRepositoryImplTest {
 - 관리자 권한 검사
 
 ## 노동영
-### Front Server 이중화 
+### Front Server 이중화
+- 팀 Domain의 SSL 인증서를 NGINX에 적용하여 HTTPS통신 활성화
+- Front Server를 NHN LoadBalancer에 연결하여 이중화
 ### Logging
 - Repository에 NHN Cloud Log&Crash을 적용하여 클라우드에서 인스턴스 로그 검색 가능
 - 프로젝트에 로깅 적용 정리 후 Github Projects에 기술공유 Issue 공유
