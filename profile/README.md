@@ -51,6 +51,10 @@
 
 - Instance
 - 
+### 모델링(ERD)
+
+### MessageQueue
+![RabbitMQ](https://img.shields.io/badge/rabbitmq-%23FF6600.svg?&style=for-the-badge&logo=rabbitmq&logoColor=white)
 
 ### 배포
 ![Github](https://img.shields.io/badge/GitHub%20Action-100000?style=for-the-badge&logo=github&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
