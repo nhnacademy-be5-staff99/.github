@@ -18,8 +18,8 @@
 |[김승규](https://github.com/seung-gyu-kim)|[노동영](https://github.com/yrrho2)|[송아현](https://github.com/SongAhyeon01)|[송진규](https://github.com/Rosin23)|[이서연](https://github.com/SeoYeonLee12)|[진효겸](https://github.com/jinhyogyeom)|
 | 게이트웨이/유레카 | 로그 | 인증/로그인 | 태그 | 좋아요 | 회원 |
 | 카테고리 | 도서 | 마이페이지 | 포인트 | 리뷰 | 검색 |
-| 장바구니 | 쿠폰 | 검색 ||||
-| 주문/결제 | |||||
+| 장바구니 | | 검색 ||||
+| 주문/결제 | | 쿠폰 ||||
 
 
 <br>
