@@ -120,10 +120,8 @@ Scrum 을 Github Issue 로 관리
 
 
 ## Black Box Test
-매 주 개발내용을 배포 시 페이지의 모든 동작을 검사.
+매 주 개발내용을 배포 시 페이지의 모든 동작을 검사
 기존 기능과 새로 배포되는 기능을 중점적으로 사이드 이펙트 유무 파악
-(피그마사진)
-(배포 체크 리스트들 사진)
 ## White Box Test(Unit Test)
 ### Controller Test
 
