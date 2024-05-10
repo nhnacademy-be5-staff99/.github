@@ -103,7 +103,6 @@ Scrum 을 Github Issue 로 관리
 ## Test Coverage
 ### bookstore 테스트 커버리지
 
-목표: 라인 커버리지 80% 이상 (**년 *월 *일 기준 **%)
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/aba1fa7d-a9c1-41ba-b5ca-6faea7eb0ca6)
 
 
@@ -115,7 +114,8 @@ Scrum 을 Github Issue 로 관리
 
 # 🖐️ Member Role
 ## 공통
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/637433c2-1543-4543-b87a-542409134a38)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/7cd05dca-f174-43df-b32e-ae21cce5a715)
+
 
 
 
