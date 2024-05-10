@@ -95,11 +95,14 @@ Scrum 을 Github Issue 로 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/1f59922a-2bd8-4e2b-bfd0-0f9c413e3937)
 
 ### 이슈 관리
-에러나 버그 등 이슈 발생 시 Github Issue 로 등록하여 Github Projects에서 관리
+- 에러나 버그 등 이슈 발생 시 Github Issue 로 등록하여 Github Projects에서 관리
+- 다른 팀원의 이슈 발견시 Github Issue 생성 후 Assignees에 등록하여 건의
 ![img.png](img.png)
+![img_4.png](img_4.png)
 
 ### Code Review
-각각의 팀원은 다른 2명의 Pull Request 코드리뷰를 컨벤션 규칙에 따라 성실히 수행
+- 각각의 팀원은 다른 2명의 Pull Request 코드리뷰를 컨벤션 규칙에 따라 성실히 수행
+- Pull Request의 수정사항과 관련된 팀원은 임의로 리뷰어에 추가, 변경 될 수 있음
 ![img_1.png](img_1.png)
 
 ### 기술 공유
