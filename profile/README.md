@@ -120,7 +120,12 @@ Scrum 을 Github Issue 로 관리
 
 
 ## Black Box Test
-## Unit Test
+## White Box Test(Unit Test)
+### Controller Test
+
+### Service Test
+
+### Repository Test
 
 
 # 🖐️ Member Role
