@@ -68,9 +68,10 @@
 
 
 # 🤖 Project Management
+> Github의 기능 `Projects`를 사용하여 프로젝트 관리
 
 ### WBS
-Github Project 로 각 작업마다 이슈로 만들어 관리
+Github Project 로 각 작업마다 이슈로 등록하여 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/86015f30-869f-4652-88b4-a781ab41aa64)
 
 
@@ -88,15 +89,25 @@ Github Project 의 Board 을 이용한 멤버별 작업 관리
 
 ### Scrum
 Scrum 을 Github Issue 로 관리
+- 주마다 Scrum Master를 변경하고 투표를 통해 마지막 2주의 Scrum Master를 고정
+- 매일 09시에 스크럼을 진행. 특이사항 발생시 Scrum Master를 통하여 일정 변경
+- 팀원간 진행사항과 그 날의 Task를 정리하고 특이사항을 공유함으로써 팀원간 협력적이고 체계적인 프로젝트 진행
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/1f59922a-2bd8-4e2b-bfd0-0f9c413e3937)
 
 ### 이슈 관리
-에러나 버그 등 이슈 발생 시 Github Issue 로 등록하여 관리
+- 에러나 버그 등 이슈 발생 시 Github Issue 로 등록하여 Github Projects에서 관리
+- 다른 팀원의 이슈 발견시 Github Issue 생성 후 Assignees에 등록하여 건의
+![img.png](img.png)
+![img_4.png](img_4.png)
 
 ### Code Review
-
+- 각각의 팀원은 다른 2명의 Pull Request 코드리뷰를 컨벤션 규칙에 따라 성실히 수행
+- Pull Request의 수정사항과 관련된 팀원은 임의로 리뷰어에 추가, 변경 될 수 있음
+![img_1.png](img_1.png)
 
 ### 기술 공유
+팀원간의 협업과 개발의 효율을 상승시키기 위해 각자 학습한 기술을 WBS Issue로 등록, 작성하여 공유
+![img_3.png](img_3.png)
 
 
 # 🧪 Test
