@@ -402,15 +402,7 @@ class CartRepositoryImplTest {
 
 # 🖐️ Member Role
 ## 공통
-- 프로젝트 요구사항 분석
-- WBS 작성
-- DB 설계
-- CI/CD 환경 구축
-- API 스펙 정의
-- 도메인 준비
-- 화면 구성
-- 팀 규칙 정립
-- 역할 분담
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/7cd05dca-f174-43df-b32e-ae21cce5a715)
 
 ## 김승규
 ### 게이트웨이/유레카
