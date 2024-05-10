@@ -402,22 +402,84 @@ class CartRepositoryImplTest {
 
 # 🖐️ Member Role
 ## 공통
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/138862600/7cd05dca-f174-43df-b32e-ae21cce5a715)
-
-
-
+- 프로젝트 요구사항 분석
+- WBS 작성
+- DB 설계
+- CI/CD 환경 구축
+- API 스펙 정의
+- 도메인 준비
+- 화면 구성
+- 팀 규칙 정립
+- 역할 분담
 
 ## 김승규
+### 게이트웨이/유레카
+- open으로 시작하는 url의 api는 open을 붙여서 서버로 보내고, 그 외 url의 api는 prefix를 제거하여 보낸다.
+  - 이렇게 할 경우, 프론트와 백 서버에서 url의 /open 여부로 토큰 및 인증에 관련된 공통 처리를 할 수 있다.
+- [API 명세](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md#api)
+  - api/bookstore/v1/…
+  - api/coupon/v1/…
+  - open/bookstore/v1/…
+  - open/coupon/v1/…
+  - open
+    - Front -> Gateway
+      - url: /open/bookstore/v1/…
+    - Gateway -> Bookstore
+      - url: /v1/…
+  - api
+    - Front -> Gateway
+      - url: /api/bookstore/v1/…
+      - Hearder: X-USER-TOKEN : jwt token
+    - Gateway -> Bookstore
+      - url: /v1/…
+      - Header: X-USER-ID : Long userId
+     
+### 공통처리
+- bookstore 서버에서 /open으로 시작하지 않는 url의 경우 xUserId header의 값을 쓰레드 로컬에 저장하는 인터셉터 처리
+- bookstore 서버에서 /admin으로 시작하는 url의 경우 admin 권한 검사하는 인터셉터 처리
+- front 서버에서 관리자 권한을 검사가 필요한 메소드 위에 @AdminPermissionCheck를 달아서 관리자 검사 AOP 처리
+- 컨벤션에 정해진 공통 응답객체 형식 관련 ResponseBodyAdvice 처리
+  ```json
+  {
+    "header": {
+        "isSuccessful":true,
+        "resultCode":200,
+        "resultMessage":"Success"
+    },
+    "result": {
+        ...
+    }
+  }
+  ```
+
 ### 카테고리
+- 관라지 권한의 유저일 경우 관리자 페이지에서 카테고리 추가, 수정, 삭제 가능
+- 스토어에서 상위 카테고리에서 하위 카테고리로 검색 가능
+
 ### 장바구니
-### 주문
-### 결제
+- 장바구니 페이지 내에서 수량 조절 및 삭제 가능
+- 비회원
+  - 레디스의 키를 쿠키로 저장하고 레디스에 도서 아이디와 수량을 저장
+- 회원
+  - DB 장바구니 테이블을 이용하여 데이터 조회
+- 장바구니에 도서가 들어가 있는 상태에서 로그인을 하면 비회원의 장바구니 내용이 회원에 추가되고 비회원 장바구니 삭제
+
+### 주문/결제(진행중)
+- 주문 화면으로 이동할 때와, 결제 버튼을 눌렀을 때 도서 재고 확인
+- 주문 화면에서 카카오 도로명 주소로 주소 입력 가능
+- 회원 주문의 경우 포인트, 쿠폰 사용 가능
+- 주문 후 회원 등급에 따라 포인트 적립
+- 토스 페이먼트로 결제
 
 ### 기타
 - 코드 스타일 정립 / Git 컨벤션 통일 / PR 및 팀 규칙 정립
   - [convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md)
-- JPA 엔티티
-- Spring REST docs
+- DB와 매핑되는 모든 JPA 엔티티 클래스 생성
+  - @Setter 사용 안함
+  - 타입과 같은 경우는 enum 사용
+  - join은 LAZY로
+- Spring REST docs 적용
+  - Spring REST Docs을 위한 기능과 관리자 권한을 반환하는 서비스를 Mocking하는 기능이 들어있는 컨트롤러 테스트 지원을 위한 RestDocSupport 클래스를 만들어서 컨트롤러 테스트 공통화
 - API 서버에서 UserId와 권한 관련 공통화
 - 응답 객체 제작 및 ResponseBodyAdvice 이용한 공통화
 - 관리자 권한 검사
