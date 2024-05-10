@@ -20,7 +20,7 @@
 | 카테고리 | 도서 | 마이페이지 | 포인트 | 리뷰 | 검색 |
 | 장바구니 | | 검색 ||||
 | 주문/결제 | | 쿠폰 ||||
-| [세부 업무](#%EA%B9%80%EC%8A%B9%EA%B7%9C)) | [세부 업무](https://github.com/nhnacademy-be5-staff99#%EB%85%B8%EB%8F%99%EC%98%81) | [세부 업무](https://github.com/nhnacademy-be5-staff99#%EC%86%A1%EC%95%84%ED%98%84) | [세부 업무](https://github.com/nhnacademy-be5-staff99#%EC%86%A1%EC%A7%84%EA%B7%9C) | [세부 업무](https://github.com/nhnacademy-be5-staff99#%EC%9D%B4%EC%84%9C%EC%97%B0) | [세부 업무](https://github.com/nhnacademy-be5-staff99#%EC%A7%84%ED%9A%A8%EA%B2%B8) |
+| [세부 업무](#%EA%B9%80%EC%8A%B9%EA%B7%9C) | [세부 업무](#%EB%85%B8%EB%8F%99%EC%98%81) | [세부 업무](#%EC%86%A1%EC%95%84%ED%98%84) | [세부 업무](#%EC%86%A1%EC%A7%84%EA%B7%9C) | [세부 업무](#%EC%9D%B4%EC%84%9C%EC%97%B0) | [세부 업무](#%EC%A7%84%ED%9A%A8%EA%B2%B8) |
 
 <br>
 
