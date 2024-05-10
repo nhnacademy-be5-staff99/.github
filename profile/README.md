@@ -227,7 +227,7 @@ class AdminCheckControllerTest extends RestDocSupport {
 ### Service Test
 @ExtendWith(MockitoExtension.class)를 활용하여 Service 단위 테스트 구현
 - given, when, then으로 나누어 BDD 방식으로 구현
-- MockedStatic을 이용하여 XUserIdThreadLocal에 저장된 xUiserId 변경
+- MockedStatic을 이용하여 XUserIdThreadLocal에 저장된 xUserId 변경
 ```java
 @ExtendWith(MockitoExtension.class)
 class CartServiceImplTest {
