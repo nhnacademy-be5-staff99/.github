@@ -122,8 +122,94 @@ Scrum 을 Github Issue 로 관리
 ## Black Box Test
 ## White Box Test(Unit Test)
 ### Controller Test
+RestDocSupport를 상속받는 형식으로 Controller 단위 테스트 구현
+
+#### RestDocSupport.java
+Spring REST Docs을 위한 기능과 관리자 권한을 반환하는 서비스를 Mocking하는 기능이 들어있는 컨트롤러 테스트 지원을 위한 클래스
+
+```java
+/**
+ * Rest docs를 편리하게 사용하기 위한 Support 클래스
+ * @author seunggyu-kim 
+ */
+@Disabled
+@Import(RestDocsConfig.class)
+@ExtendWith({RestDocumentationExtension.class})
+public abstract class RestDocSupport {
+    @Autowired
+    protected MockMvc mockMvc;
+
+    @Autowired
+    protected ObjectMapper objectMapper;
+
+    @Autowired
+    protected RestDocumentationResultHandler restDoc;
+
+    // 관리자 여부 테스트 용으로 사용
+    // ex) BDDMockito.given(adminCheckService.isAdmin(Mockito.anyLong())).willReturn(true);
+    @MockBean
+    protected AdminCheckService adminCheckService;
+
+    /**
+     * Spring Rest Docs를 사용하기 위한 설정
+     *
+     * @param webApplicationContext
+     * @param restDocumentationContextProvider
+     */
+    @BeforeEach
+    public void setup(
+            final WebApplicationContext webApplicationContext,
+            final RestDocumentationContextProvider restDocumentationContextProvider
+    ) {
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
+                .apply(MockMvcRestDocumentation.documentationConfiguration(restDocumentationContextProvider))
+                .alwaysDo(MockMvcResultHandlers.print())
+                .alwaysDo(restDoc)
+                .addFilters(new CharacterEncodingFilter("UTF-8", true))     // 한글 깨짐 방지 처리
+                .build();
+    }
+}
+```
+#### 컨트롤러 테스트 예시(AdminCheckControllerTest.java)
+```java
+@WebMvcTest(AdminCheckController.class)
+class AdminCheckControllerTest extends RestDocSupport {
+    /**
+     * 관리자 여부 확인 테스트
+     * <p>사용자가 관리자 권한을 갖고있는 경우
+     *
+     * @throws Exception
+     */
+    @DisplayName("관리자 여부 확인 - 관리자인 경우")
+    @Test
+    void checkAdmin_true() throws Exception {
+        // given
+        Long userId = Mockito.anyLong();
+        BDDMockito.given(adminCheckService.isAdmin(userId)).willReturn(true);
+
+        // when
+        String response = mockMvc.perform(
+                        MockMvcRequestBuilders.get("/v1/admin/check")
+                                .header("X-USER-ID", userId))
+                .andExpectAll(
+                        MockMvcResultMatchers.status().isOk()
+                )
+                .andReturn().getResponse().getContentAsString();
+
+        // then
+        CommonHeader commonHeader = CommonHeader.builder().httpStatus(HttpStatus.OK).resultMessage("Success").build();
+        CommonResponse<AdminCheckResponse> commonResponse =
+                CommonResponse.<AdminCheckResponse>builder().header(commonHeader).result(new AdminCheckResponse(true))
+                        .build();
+        String expected = objectMapper.writeValueAsString(commonResponse);
+        Assertions.assertThat(response).isEqualTo(expected);
+    }
+    ...(생략)
+}
+```
 
 ### Service Test
+
 
 ### Repository Test
 
@@ -148,6 +234,10 @@ Scrum 을 Github Issue 로 관리
 ### 기타
 - 코드 스타일 정립 / Git 컨벤션 통일 / PR 및 팀 규칙 정립
   - [convention.md](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md)
+- JPA 엔티티
+- Spring REST docs
+- API 서버에서 UserId와 권한 관련 공통화
+- 응답 객체 제작 및 ResponseBodyAdvice 이용한 공통화
 
 ## 노동영
 ### Logging
