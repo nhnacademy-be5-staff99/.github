@@ -16,11 +16,10 @@
 |<img src="https://avatars.githubusercontent.com/u/19241369?v=4" width= 80>|<img src="https://avatars.githubusercontent.com/u/86106442?v=4" width = 80>|<img src="https://avatars.githubusercontent.com/u/114563915?v=4" width = 80>|<img src="https://avatars.githubusercontent.com/u/138862600?v=4" width = 80>|<img src="https://avatars.githubusercontent.com/u/134525851?v=4" width = 80>|<img src="https://avatars.githubusercontent.com/u/148544516?v=4" width=80>|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[김승규](https://github.com/seung-gyu-kim)|[노동영](https://github.com/yrrho2)|[송아현](https://github.com/SongAhyeon01)|[송진규](https://github.com/Rosin23)|[이서연](https://github.com/SeoYeonLee12)|[진효겸](https://github.com/jinhyogyeom)|
-| 게이트웨이 | 로그 | 인증/로그인 | 태그 | 좋아요 | 회원 |
-| 유레카 | 도서 | 마이페이지 | 포인트 | 리뷰 | 검색 |
-| 카테고리 | 쿠폰 | 검색 ||||
-| 장바구니 | |||||
-| 주문/결제 | | ||||
+| 게이트웨이/유레카 | 로그 | 인증/로그인 | 태그 | 좋아요 | 회원 |
+| 카테고리 | 도서 | 마이페이지 | 포인트 | 리뷰 | 검색 |
+| 장바구니 | 쿠폰 | 검색 ||||
+| 주문/결제 | |||||
 
 
 <br>
