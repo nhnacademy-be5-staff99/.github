@@ -273,71 +273,7 @@ class CartRepositoryImplTest {
     @Autowired
     private CartRepository cartRepository;
 
-    private User user;
-    private Book book1;
-    private Book book2;
-
-    @BeforeEach
-    void setUp() {
-        Grade grade = Grade.builder()
-                .gradeName("BASIC")
-                .gradeStartCost(0)
-                .gradeEndCost(1000000)
-                .gradeRatio(10)
-                .build();
-        entityManager.persist(grade);
-
-        Auth auth = Auth.builder()
-                .authName("USER")
-                .build();
-        entityManager.persist(auth);
-
-        Consumer consumer = Consumer.builder()
-                .consumerName("consumer name")
-                .consumerEmail("user@naver.com")
-                .consumerPhone("01012345678")
-                .consumerPassword("$2a$12$S7/5PoUN5HtdFEGZoEByg.BF45kovwhZaiR5fKwXtrXmJ.QlfGd7S")
-                .build();
-        entityManager.persist(consumer);
-
-        user = User.builder()
-                .userBirthdate(LocalDate.parse("2007-12-03"))
-                .grade(grade)
-                .auth(auth)
-                .consumers(consumer)
-                .build();
-        entityManager.persist(user);
-
-        book1 = Book.builder()
-                .bookIsbn13("1234567890123")
-                .bookIsbn10("1234567890")
-                .bookTitle("book title1")
-                .bookContents("book contents1")
-                .bookDescription("book description1")
-                .bookPublisher("book publisher")
-                .bookDate(LocalDateTime.parse("2007-12-03T10:15:30"))
-                .bookPrice(10000)
-                .bookSalePrice(9000)
-                .bookIsPacked(false)
-                .bookThumbnailUrl("https://via.placeholder.com/200x303")
-                .build();
-        entityManager.persist(book1);
-
-        book2 = Book.builder()
-                .bookIsbn13("9234567890123")
-                .bookIsbn10("9234567890")
-                .bookTitle("book title2")
-                .bookContents("book contents2")
-                .bookDescription("book description2")
-                .bookPublisher("book publisher")
-                .bookDate(LocalDateTime.parse("2007-12-03T10:15:30"))
-                .bookPrice(20000)
-                .bookSalePrice(15000)
-                .bookIsPacked(false)
-                .bookThumbnailUrl("https://via.placeholder.com/200x303")
-                .build();
-        entityManager.persist(book2);
-    }
+    ...(생략)...
 
     @Test
     @DisplayName("사용자 ID로 장바구니 아이템 조회")
