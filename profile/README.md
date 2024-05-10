@@ -32,26 +32,26 @@
 ![Java](https://img.shields.io/badge/Java%2011-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ### 빌드 도구
-
+![maven](https://camo.githubusercontent.com/44942b8d24da4d9588d5d3794e338cd9a31530588b6709d7be713f7e332697a7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6176656e2d4337314133363f7374796c653d666c6174266c6f676f3d4170616368654d6176656e266c6f676f436f6c6f723d7768697465)
 
 ### 개발
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![SpringSecurity](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
 
 ### 테스트
+![SonarQube](https://camo.githubusercontent.com/199474b19f556a68187bf20bfc0adeb71ab4215c9a5d6ca50e9b9f0dcfa6f080/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536f6e6172517562652d3445393843443f7374796c653d666c6174266c6f676f3d536f6e617251756265266c6f676f436f6c6f723d7768697465) ![junit5](https://camo.githubusercontent.com/ec86c22ee2005f3643066556bcb8d6d47e0dab2ee8745f2f1bb7030ee786a926/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a756e6974352d3235413136323f7374796c653d666c6174266c6f676f3d4a756e697435266c6f676f436f6c6f723d7768697465)
 
 ### DB
 ![Mysql](https://img.shields.io/badge/Mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 
 ### 검색엔진
-![ElasticSerarch](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
-### UI
+![ElasticSearch](https://camo.githubusercontent.com/88a4634ac0ccc183ed33b315478f53c202b6cfea2f91f92b1a50f8b5a2c78951/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456c61737469635f5365617263682d3030353537313f7374796c653d666f722d7468652d6261646765266c6f676f3d656c6173746963736561726368266c6f676f436f6c6f723d7768697465)
+
 ### Cloud
 **NHN CLOUD**
 
 - Instance
 - 
-### 모델링(ERD)
 
 ### Message Queue
 ![RabbitMQ](https://img.shields.io/badge/rabbitmq-%23FF6600.svg?&style=for-the-badge&logo=rabbitmq&logoColor=white)
@@ -66,11 +66,7 @@
 ### ECT
 ![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white) ![kakao](https://img.shields.io/badge/Kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=black)
 
-
-# 🏗️ Project Architecture
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
-
-# 🚀 CI/CD
+### CI/CD
 ![GithubProject](https://camo.githubusercontent.com/85f6488e887286e7e439363f8c759d1dd9b9688522e0b5bf82e661185e14249b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476974687562253230416374696f6e2d3230383846463f7374796c653d666c6174266c6f676f3d676974687562616374696f6e73266c6f676f436f6c6f723d7768697465) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)
 
 ### UI
@@ -78,6 +74,11 @@
 
 ### Front
 ![Thymleaf](https://camo.githubusercontent.com/9b87289c72e7149578fc656bfb49b6a6a590204cc8f47ba6f9ed22360c6377a9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5468796d656c6561662d3030354630463f7374796c653d666c6174266c6f676f3d5468796d656c656166266c6f676f436f6c6f723d7768697465) ![HTML](https://camo.githubusercontent.com/068ce2420bb9e9f5101b79975585c860737246530a71c5ddb6024de5b755c59a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666c6174266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465)
+
+# 🏗️ Project Architecture
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/73a52d56-f848-4981-922f-8cf37860b99b)
+
+# 🚀 CI/CD
 
 # 💿 ERD
 ![STORE99 V1 6](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/75dd00a7-227e-494e-902f-db47aef8746a)
