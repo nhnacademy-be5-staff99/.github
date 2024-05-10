@@ -482,7 +482,7 @@ class CartRepositoryImplTest {
   - Spring REST Docs을 위한 기능과 관리자 권한을 반환하는 서비스를 Mocking하는 기능이 들어있는 컨트롤러 테스트 지원을 위한 RestDocSupport 클래스를 만들어서 컨트롤러 테스트 공통화
 
 ## 노동영
-### Front Server 이 중화, SSL 설정
+### Front Server 이중화, SSL 설정
 - 팀 Domain의 SSL 인증서를 NGINX에 적용하여 HTTPS통신 활성화
 - Front Server를 NHN LoadBalancer에 연결하여 이중화
 ### Logging
