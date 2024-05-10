@@ -71,7 +71,6 @@
 ### Front
 ![Thymleaf](https://camo.githubusercontent.com/e1ad5eb422f04c6da31adacb553ce03975081d0987e58cec5ad00be07272bf54/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7468796d656c6561662d3030354630463f7374796c653d666f722d7468652d6261646765266c6f676f3d7468796d656c656166266c6f676f436f6c6f723d7768697465) ![HTML](https://camo.githubusercontent.com/d30449fa2dbae519940a0d08f0202996163310b8c6b9336480232cfb48d38286/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465) ![CSS](https://github.com/nhnacademy-be5-staff99/.github/assets/134525851/9aa807e7-95d3-4691-91e5-5dc77f515784) ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/134525851/420f9542-cd7c-4e9c-a405-4d1f0d4f0277)
 
-
 # 🏗️ Project Architecture
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/e5cd4657-a4c7-46bb-a2f4-49dc1b8e7b62)
 
@@ -85,24 +84,24 @@
 # 🤖 Project Management
 > Github의 기능 `Projects`를 사용하여 프로젝트 관리
 
-### WBS
+### [WBS](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/1)
 Github Project 로 각 작업마다 이슈로 등록하여 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/86015f30-869f-4652-88b4-a781ab41aa64)
 
 
-### Roadmap - 일정관리
+### [Roadmap - 일정관리](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/6)
 Github Project 의 Roadmap 을 이용한 멤버별 일정 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/9773dc2c-c6bf-4e76-8d65-a936c49c2cb1)
 
 
-### Board - 작업 관리
+### [Board - 작업 관리](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/3)
 
 Github Project 의 Board 을 이용한 멤버별 작업 관리
 - Todo, InProgress, CodeReview, Delay, Done 으로 나누어 상태 확인
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/9caeed8c-b0e3-4ec9-9f94-5e3383db2516)
 
 
-### Scrum
+### [Scrum](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/7)
 Scrum 을 Github Issue 로 관리
 - 주마다 Scrum Master를 변경하고 투표를 통해 마지막 2주의 Scrum Master를 고정
 - 매일 09시에 스크럼을 진행. 특이사항 발생시 Scrum Master를 통하여 일정 변경
@@ -115,18 +114,14 @@ Scrum 을 Github Issue 로 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/b6562dba-faa7-4813-9829-4e846ae6150b)
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/a53f41bc-89b1-47c5-b643-eeae8275725a)
 
-
 ### Code Review
 - 각각의 팀원은 다른 2명의 Pull Request 코드리뷰를 컨벤션 규칙에 따라 성실히 수행
 - Pull Request의 수정사항과 관련된 팀원은 임의로 리뷰어에 추가, 변경 될 수 있음
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/e01df437-bf73-4a89-9f6e-823541322ff2)
 
-
-### 기술 공유
+### [기술 공유](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/12)
 팀원간의 협업과 개발의 효율을 상승시키기 위해 각자 학습한 기술을 WBS Issue로 등록, 작성하여 공유
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/bc528076-ef31-4f81-a5dd-427feca8d7ba)
-
-
 
 # 🧪 Test
 ## Test Coverage
@@ -138,6 +133,7 @@ Scrum 을 Github Issue 로 관리
 - 기존 기능과 새로 배포되는 기능을 중점적으로 사이드 이펙트 유무 파악
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/5f1e3a32-51f2-4df5-a6d4-259898f4c3bc)
 
+### [배포](https://github.com/orgs/nhnacademy-be5-staff99/projects/1/views/13)
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/bf307fd8-c4bc-4b60-a066-9e306d7620be)
 
 ## White Box Test(Unit Test)
