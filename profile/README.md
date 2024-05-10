@@ -39,6 +39,9 @@
 
 ### 테스트
 ### DB
+![Mysql](https://img.shields.io/badge/Mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+
 ### 검색엔진
 ### UI
 ### Cloud
