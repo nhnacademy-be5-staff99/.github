@@ -62,7 +62,7 @@
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/e5cd4657-a4c7-46bb-a2f4-49dc1b8e7b62)
 
 # 🚀 CI/CD
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/cdc1e38f-108e-4370-937c-a08d733e8f5a)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/fb136326-fc08-4d13-ac7a-1bb282e700da)
 
 # 💿 ERD
 ![STORE99 V1 6](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/75dd00a7-227e-494e-902f-db47aef8746a)
