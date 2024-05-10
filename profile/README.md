@@ -61,7 +61,7 @@
 ![Github](https://img.shields.io/badge/GitHub%20Action-100000?style=for-the-badge&logo=github&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ### ECT
-![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white) ![kakao](https://img.shields.io/badge/Kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=black)
+![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white) ![kakao](https://img.shields.io/badge/Kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=black) ![JWT](https://camo.githubusercontent.com/b2a13b2f2c235be672b8dc4f5571395f61de48b2b1f0238a9d79fae03f121c6c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a57542d3030303030303f7374796c653d666c6174266c6f676f3d6a736f6e776562746f6b656e73266c6f676f436f6c6f723d7768697465)
 
 ### CI/CD
 ![GithubProject](https://camo.githubusercontent.com/85f6488e887286e7e439363f8c759d1dd9b9688522e0b5bf82e661185e14249b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476974687562253230416374696f6e2d3230383846463f7374796c653d666c6174266c6f676f3d676974687562616374696f6e73266c6f676f436f6c6f723d7768697465) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)
