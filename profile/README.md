@@ -56,9 +56,6 @@
 ### 협업도구
 ![GithubProject](https://camo.githubusercontent.com/fd499f0e176b319238be1f69a8baf80399cfbf5c4d3bc9e4717ca4c83960bb31/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769746875622d3138313731373f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465)
 
-### 배포
-![Github](https://img.shields.io/badge/GitHub%20Action-100000?style=for-the-badge&logo=github&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
 ### ECT
 ![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white) ![kakao](https://img.shields.io/badge/Kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=black) ![JWT](https://camo.githubusercontent.com/138db798f7f1539dfa9daf51b867e320ca9fe0381dc64660974761449290c79a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a57542d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d6a736f6e776562746f6b656e73266c6f676f436f6c6f723d7768697465)
 
