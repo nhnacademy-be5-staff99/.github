@@ -115,7 +115,7 @@ Scrum 을 Github Issue 로 관리
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/a53f41bc-89b1-47c5-b643-eeae8275725a)
 
 ### Code Review
-- 각각의 팀원은 다른 2명의 Pull Request 코드리뷰를 컨벤션 규칙에 따라 성실히 수행
+- 각각의 팀원은 다른 2명의 Pull Request 코드리뷰를 컨벤션 규칙에 따라 성실히 수행 [컨벤션: 코드리뷰 규칙](https://github.com/nhnacademy-be5-staff99/.github/blob/main/convention.md#%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0)
 - Pull Request의 수정사항과 관련된 팀원은 임의로 리뷰어에 추가, 변경 될 수 있음
 ![image](https://github.com/nhnacademy-be5-staff99/.github/assets/86106442/e01df437-bf73-4a89-9f6e-823541322ff2)
 
