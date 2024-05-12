@@ -442,6 +442,10 @@ class CartRepositoryImplTest {
 - 좋아요 수 조회
 ### 리뷰
 - (진행중)
+### 북스토어 캐시 적용 (진행예정)
+- Simple Cache
+- EHCache
+- RedisCache
 ## 진효겸
 ### 회원
 ### 검색
