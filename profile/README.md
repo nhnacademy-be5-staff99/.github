@@ -73,10 +73,10 @@
 
 
 # 🏗️ Project Architecture
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/c91f5a9b-06e1-4e60-ae4e-922b62e518dc)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/2a007d1c-2fc6-4a5c-b9c6-6aa580eaddc1)
 
 # 🚀 CI/CD
-![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/fb136326-fc08-4d13-ac7a-1bb282e700da)
+![image](https://github.com/nhnacademy-be5-staff99/.github/assets/19241369/80acb6ae-af0b-417c-9c30-246373238b21)
 
 # 💿 ERD
 ![STORE99 V1 6](https://github.com/nhnacademy-be5-staff99/.github/assets/114563915/75dd00a7-227e-494e-902f-db47aef8746a)
